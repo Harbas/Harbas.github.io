@@ -1,0 +1,53 @@
+/*pronaci najblizi nuli i  najdalji*/ 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	float a[10] = { 10, 5, 15, -14, -12.5, -1.5, 0.1, 11, -25, 4 }, najb, najd;
+	
+	system("PAUSE");
+	return 0;
+}
+
+----------------------------------------------------
+#include <iostream>
+using namespace std;
+/*naæi  susjedne èlanove najmanjeg (najveæeg) èlana niza*/
+int main()
+{
+	int br;
+	cout << "Unesite broj clanova niza--->";
+	cin >> br;
+	int iNiz[100];
+	//Unos clanova niza
+	for (int i = 0; i<br; i++)
+	{
+		cout << i << " clan niza--->";
+		cin >> iNiz[i];
+	}
+	//Ispis unesenog niza
+	cout << "Uneseni niz: " << endl;
+	for (int i = 0; i<br; i++)
+	{
+		cout << iNiz[i] << " ";
+	}
+	int nmax = 0, imax = 0;
+	for (int i = 0; i<br; i++)
+	{
+		if (iNiz[i]>nmax)
+		{
+			nmax = iNiz[i];
+			imax = i;
+		}
+	}
+	if (imax == 0)
+	{
+		cout << "Najveci clan niza je: " << iNiz[0] << endl;
+		
+	}
+	
+	system("PAUSE");
+	return 0;
+}
+------------------------------------
